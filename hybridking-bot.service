@@ -1,0 +1,17 @@
+[Unit]
+Description=Hybrid King Discord Bot
+After=network.target
+
+[Service]
+Type=simple
+User=INLOCUIESTE_CU_USERNAME_TU
+WorkingDirectory=/home/INLOCUIESTE_CU_USERNAME_TU/hybridking
+ExecStart=/home/INLOCUIESTE_CU_USERNAME_TU/hybridking/venv/bin/python bot_b2b.py
+Restart=always
+RestartSec=15
+StandardOutput=append:/var/log/hybridking-bot.log
+StandardError=append:/var/log/hybridking-bot.log
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

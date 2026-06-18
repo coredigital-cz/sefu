@@ -1,0 +1,24 @@
+# ── Hybrid King — Python Requirements ─────────────────────
+# Install with: pip install -r requirements.txt
+
+# HTTP client (async, HTTP/1.1)
+httpx==0.27.0
+
+# HTML parsing
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# SQLAlchemy async ORM
+sqlalchemy[asyncio]==2.0.30
+aiosqlite==0.20.0          # SQLite driver (default)
+# asyncpg==0.29.0          # uncomment if using PostgreSQL
+
+# Pydantic settings (reads .env)
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Async file I/O (used by factory.py)
+aiofiles==23.2.1
+
+# Env file support
+python-dotenv==1.0.1
